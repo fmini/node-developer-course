@@ -1,0 +1,8 @@
+The module file system is assigned to the variable fs -> 'const fs = require('fs')'
+
+fs.writeFileSync('file.name', 'data to write') creates or overwrites that file
+
+fs.appendFileSync('file.name', 'data to write') adds data to the end of that file
+
+adding \n at the end of the data causes the next addition on a new line
+
