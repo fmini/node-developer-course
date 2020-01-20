@@ -1,0 +1,24 @@
+The module file system is assigned to the variable fs -> 'const fs = require('fs')'
+
+fs.writeFileSync('file.name', 'data to write') creates or overwrites that file
+
+fs.appendFileSync('file.name', 'data to write') adds data to the end of that file
+
+adding \n at the end of the data causes the next addition on a new line
+
+You can link to your own files by providing the relative path ie. require()./fileName.js
+
+Each individual file has it's own scope so variables do not cross file bounderies
+
+You can 'explicitly' export variables from one file to another via module.exports = variable in the sending file
+
+To use the data from module.exports, the receiving file must have const variable = require('relative path to exporting file')
+
+
+
+
+
+
+
+
+
