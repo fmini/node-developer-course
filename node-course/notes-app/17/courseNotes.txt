@@ -38,7 +38,7 @@ start nodemon on a file by typing nodemon fileName.js in terminal. Quit nodemon 
 Command line arguments can be accessed through the array process.argv and includes the node.js path and 
 the path to the executed file. The rest of the itmes in the array were gathered from the terminal.
 
-yargs is an npm argument parser. 1st install yargs, then you can add yargs.command > command, builder, & handler
+yargs is an npm argument parser. 1st install yargs, then you can add yargs.command > command, builder, & handler 
 
 
 

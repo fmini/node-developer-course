@@ -25,4 +25,4 @@ fs.appendFileSync('courseNotes.txt',"yargs is an npm argument parser. 1st instal
 fs.appendFileSync('courseNotes.txt',"\n\n");
 fs.appendFileSync('courseNotes.txt',"\n\n");
 fs.appendFileSync('courseNotes.txt',"\n\n");
-fs.appendFileSync('courseNotes.txt',"\n\n");
+fs.appendFileSync('courseNotes.txt',"\n\n"); 
