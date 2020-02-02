@@ -18,7 +18,7 @@ npm init in the root on the terminal is used to add the node package manager (pa
 
 npm packages can be found and npmjs.com and will have an install command to copy. Paste in terminal root.
 
-The install command will add a node_modules folder and a package-lock.json file (do not edit thes) 
+The install command will add a node_modules folder and a package-lock.json file (do not edit these) 
 
 This will also add the package you are installing as a dependency in package.json
 
@@ -40,7 +40,14 @@ the path to the executed file. The rest of the itmes in the array were gathered 
 
 yargs is an npm argument parser. 1st install yargs, then you can add yargs.command > command, builder, & handler
 
+Data can be stored with JSON. To change a js object to a JSON string, use const variable = JSON.stringify(fileName)
 
+To change a JSON string to a js object, use const variable = JSON.parse(fileName), use fs from note line 1 to store info.
+
+Convert js object to JSON string with JSON.stringify(objectFileName)
+Convert JSON string to JS object with JSON.parse(stringFilename)
+
+To export more than one return value via module.exports, set it equal to an object with mutliple properies and functions
 
 
 

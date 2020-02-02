@@ -1,12 +1,40 @@
 const chalk = require('chalk');
-const validator = require('validator');
-const getNotes = require('./notes.js');
+const yargs = require('yargs');
+const notes = require('./notes.js');
 
-const msg = getNotes();
-console.log(msg)
+yargs.command({
+  command: 'add',
+  describe: 'Add a note',
+  builder: {
+    title: {
+      describe: 'Note title',
+      demandOption: true,
+      type: 'string'
+    },
+    body: {
+      describe: 'Note contents',
+      demandOption: true,
+      type: 'string'
+    }
+  },
+  handler: function (argv) {
+    notes.addNote(argv.title, argv.body)
+  }
+})
 
-console.log(validator.isURL('http://fminiq.guru'));
+yargs.command({
+  command: 'remove',
+  describe: 'Remove a note',
+  builder: {
+    title: {
+      describe: 'Title of note to remove',
+      demandOption: true,
+      type: 'string'
+    }
+  },
+  handler: function (argv) {
+    notes.removeNote(argv.title)
+  }
+})
 
-console.log(chalk.green('success'));
-console.log(chalk.yellow.bold('caution'));
-console.log(chalk.black.bgRed('error'));
+.argv

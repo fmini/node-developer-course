@@ -22,7 +22,3 @@ fs.appendFileSync('courseNotes.txt',"start nodemon on a file by typing nodemon f
 fs.appendFileSync('courseNotes.txt',"Command line arguments can be accessed through the array process.argv and includes the node.js path and \n");
 fs.appendFileSync('courseNotes.txt',"the path to the executed file. The rest of the itmes in the array were gathered from the terminal.\n\n");
 fs.appendFileSync('courseNotes.txt',"yargs is an npm argument parser. 1st install yargs, then you can add yargs.command > command, builder, & handler\n\n");
-fs.appendFileSync('courseNotes.txt',"\n\n");
-fs.appendFileSync('courseNotes.txt',"\n\n");
-fs.appendFileSync('courseNotes.txt',"\n\n");
-fs.appendFileSync('courseNotes.txt',"\n\n"); 

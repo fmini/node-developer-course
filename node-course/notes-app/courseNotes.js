@@ -10,7 +10,7 @@ fs.appendFileSync('courseNotes.txt',"You can 'explicitly' export variables from 
 fs.appendFileSync('courseNotes.txt',"To use the data from module.exports, the receiving file must have const variable = require('relative path to exporting file')\n\n");
 fs.appendFileSync('courseNotes.txt',"npm init in the root on the terminal is used to add the node package manager (package.json) file to the project\n\n");
 fs.appendFileSync('courseNotes.txt',"npm packages can be found and npmjs.com and will have an install command to copy. Paste in terminal root.\n\n");
-fs.appendFileSync('courseNotes.txt',"The install command will add a node_modules folder and a package-lock.json file (do not edit thes) \n\n");
+fs.appendFileSync('courseNotes.txt',"The install command will add a node_modules folder and a package-lock.json file (do not edit these) \n\n");
 fs.appendFileSync('courseNotes.txt',"This will also add the package you are installing as a dependency in package.json\n\n");
 fs.appendFileSync('courseNotes.txt',"To use the new package, add const variable = require('packageName') in the main application file\n\n");
 fs.appendFileSync('courseNotes.txt',"The node-modules folder can be deleted and ignored and can (and should) be recreated on every computer it is downloaded to.\n");
@@ -22,7 +22,11 @@ fs.appendFileSync('courseNotes.txt',"start nodemon on a file by typing nodemon f
 fs.appendFileSync('courseNotes.txt',"Command line arguments can be accessed through the array process.argv and includes the node.js path and \n");
 fs.appendFileSync('courseNotes.txt',"the path to the executed file. The rest of the itmes in the array were gathered from the terminal.\n\n");
 fs.appendFileSync('courseNotes.txt',"yargs is an npm argument parser. 1st install yargs, then you can add yargs.command > command, builder, & handler\n\n");
-fs.appendFileSync('courseNotes.txt',"\n\n");
+fs.appendFileSync('courseNotes.txt',"Data can be stored with JSON. To change a js object to a JSON string, use const variable = JSON.stringify(fileName)\n\n");
+fs.appendFileSync('courseNotes.txt',"To change a JSON string to a js object, use const variable = JSON.parse(fileName), use fs from note line 1 to store info.\n\n");
+fs.appendFileSync('courseNotes.txt',"Convert js object to JSON string with JSON.stringify(objectFileName)\n");
+fs.appendFileSync('courseNotes.txt',"Convert JSON string to JS object with JSON.parse(stringFilename)\n\n");
+fs.appendFileSync('courseNotes.txt',"To export more than one return value via module.exports, set it equal to an object with mutliple properies and functions\n\n");
 fs.appendFileSync('courseNotes.txt',"\n\n");
 fs.appendFileSync('courseNotes.txt',"\n\n");
 fs.appendFileSync('courseNotes.txt',"\n\n");
